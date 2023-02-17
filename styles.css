@@ -1,0 +1,101 @@
+/******************TAG SELECTORS ******************/
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+  
+}
+
+h1{
+    color: #7286D3;
+    font-family: 'Sacramento';
+    font-size: 5.65rem;
+    margin: 50px auto 0 auto;
+}
+
+h2{
+    display:inline-block;
+    margin: 0;
+}
+
+div{
+    text-align: center;
+}
+/*
+div{
+    background-color: #E5E0FF;
+    border-bottom: solid;
+    border-color:black;
+    padding: 20px;
+}
+*/
+img{
+    width: 200px;
+
+}
+
+
+/******************CLASS SELECTORS ******************/
+.card{
+    outline: none;
+    border: 5px solid #404B69;
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: black;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 10px;
+    display: inline-block;
+    width: 150/16rem;
+    height: 250/16rem;
+    text-align: center;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.915);
+    padding: 40px;
+}
+
+.operation{
+    border: 5px solid #404B69;
+    font-size: 50px;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: black;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 10px;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.915);
+    padding:0;
+
+}
+
+.arith{
+    font-size: 55px;
+    width: 75px;
+    height: 75px;
+    padding:0px;
+    border: 2px solid;
+    text-align:center;
+    background-color: #7286D3
+
+}
+
+.input{
+    font-size: 55px;
+    width: 75px;
+    height: 75px;
+    padding:0px;
+    text-align:center;
+
+}
+
+.isSelected{
+    background-color: aqua;
+}
+/******************ID SELECTORS ******************/
