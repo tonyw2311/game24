@@ -22,6 +22,8 @@ h2{
 
 div{
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
 }
 /*
 div{
@@ -37,6 +39,7 @@ img{
 }
 
 
+
 /******************CLASS SELECTORS ******************/
 .card{
     outline: none;
@@ -49,10 +52,10 @@ img{
     text-shadow: 3px 0 #DBEDF3;
     border-radius: 10px;
     display: inline-block;
-    width: 150/16rem;
-    height: 250/16rem;
+    width: 100px;
+    height: 200px;
     text-align: center;
-    margin: 30px;
+    margin: 0px;
     background-color: rgba(255, 255, 255, 0.915);
     padding: 40px;
 }
@@ -98,4 +101,30 @@ img{
 .isSelected{
     background-color: aqua;
 }
+
+.correct{
+    color: green;
+}
+.incorrect{
+    color:red;
+}
+
+.parenthesis{
+    font-size: 55px;
+    color: lightgrey;
+    display:inline;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 0;
+
+}
+.parenthesis:hover{
+    color: black;
+
+}
+.clickedParen{
+    color: black;
+}
+
+
 /******************ID SELECTORS ******************/
