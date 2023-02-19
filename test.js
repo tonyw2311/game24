@@ -1,3 +1,4 @@
+
 //24 checker function
 function check24(num_list){
     let op = ['+','-','*','/'];
@@ -77,5 +78,5 @@ function permutator(inputArr) {
 
 
 
-number_list = [9,5,8,2];
+number_list = [6,7,6,1];
 console.log(check24(number_list));

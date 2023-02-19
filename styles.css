@@ -22,8 +22,8 @@ h2{
 
 div{
     text-align: center;
-    overflow: hidden;
     white-space: nowrap;
+    margin: 20px 0;
 }
 /*
 div{
@@ -51,13 +51,12 @@ img{
     color: black;
     text-shadow: 3px 0 #DBEDF3;
     border-radius: 10px;
-    display: inline-block;
+    display: inline;
     width: 100px;
-    height: 200px;
+    height: 100px;
     text-align: center;
-    margin: 0px;
     background-color: rgba(255, 255, 255, 0.915);
-    padding: 40px;
+    padding: 20px;
 }
 
 .operation{
@@ -69,7 +68,7 @@ img{
     color: black;
     text-shadow: 3px 0 #DBEDF3;
     border-radius: 10px;
-    display: inline-block;
+    display: inline;
     width: 75px;
     height: 75px;
     text-align: center;
@@ -95,7 +94,6 @@ img{
     height: 75px;
     padding:0px;
     text-align:center;
-
 }
 
 .isSelected{
@@ -110,7 +108,7 @@ img{
 }
 
 .parenthesis{
-    font-size: 55px;
+    font-size: 100px;
     color: lightgrey;
     display:inline;
     text-align: center;

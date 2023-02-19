@@ -6,6 +6,21 @@ $(".card").each(function(index){
     $(this).text(numList[index]);
 })
 
+$(".card").draggable({cursor: 'move',
+revert: true}).droppable({
+    accept: '.card',
+    hoverClass: 'hovered',
+    drop: handleCardDrop
+  } );
+
+  function handleCardDrop( event, ui ) {
+    let cardInitial = $(this).text();
+    let cardDrag = ui.draggable.text();
+    $(this).text(cardDrag);
+    ui.draggable.text(cardInitial);
+
+
+  }
 $(".parenthesis").on("click",function(){
     $(this).toggleClass("clickedParen");
 })
@@ -13,6 +28,7 @@ $(".parenthesis").on("click",function(){
 function randFour(){
     numList = Array.from({length: 4}, () => (Math.floor(Math.random()*10)+1));
     while(! check24(numList)){
+        console.log(numList)
         numList = Array.from({length: 4}, () => (Math.floor(Math.random()*10)+1));
     }
     return numList;
@@ -44,7 +60,9 @@ addEventListener("keydown",function(event){
 
         case("Enter"):
             if($(".isItCorrect").hasClass("correct")){
-                $(".isItCorrect").removeClass("correct")
+                $(".isItCorrect").removeClass("correct").text("");
+                $(".parenthesis").removeClass("clickedParen");
+                $(".operation").text("");
                 $(".card").each(function(index){
                     numList = randFour();
                     //$(this).text(6);
@@ -52,7 +70,7 @@ addEventListener("keydown",function(event){
                 })
             }
             else{
-            correctOrNot();
+                correctOrNot();
             }
         break;
     }
